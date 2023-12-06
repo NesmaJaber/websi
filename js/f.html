@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Input Example with Inline Label</title>
+
+  <!-- Include Flatpickr CSS and JS files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+
+  <form>
+    <!-- Date Input with Inline Label using Flatpickr -->
+    <input type="text" id="period" name="period" class="date-input" placeholder="الفترة...">
+
+    <!-- Submit Button (optional) -->
+    <button type="submit">Submit</button>
+
+    <script>
+      // Initialize Flatpickr
+      flatpickr("#period", {
+        dateFormat: "Y-m-d",  // Set the desired date format
+      });
+    </script>
+  </form>
+
+</body>
+</html>

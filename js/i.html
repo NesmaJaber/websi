@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Phone Number Input Example</title>
+
+  <style>
+    /* Optional styling for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* Style for the combined input */
+    .combined-input {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .country-code {
+      flex: 0 0 auto;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .phone-number {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .flag {
+      max-width: 30px;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <!-- Combined Input for Phone Number -->
+    <label for="combined-phone">Phone Number:</label>
+    <div class="combined-input">
+      <!-- Country Code Select -->
+      <select id="country-code" name="country-code" class="country-code">
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+91">+91 (India)</option>
+        <!-- Add more country codes as needed -->
+      </select>
+      
+      <!-- Phone Number Input -->
+      <input type="text" id="combined-phone" name="combined-phone" class="phone-number" placeholder="Enter phone number...">
+
+      <!-- Flag Image -->
+      <img src="usa-flag.png" alt="USA Flag" class="flag">
+    </div>
+
+    <!-- Submit Button (optional) -->
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
